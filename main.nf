@@ -90,7 +90,7 @@ process quant {
 }
 
 process fastqc {
-    cpus = 8
+    cpus = 16
     tag "FASTQC on $sample_id"
     publishDir "${params.outdir}/", mode:'copy'
 
